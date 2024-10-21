@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <section className="mt-12">
       <div className="flex flex-col-reverse md:flex-row items-center justify-around">
-        <div className="flex flex-col gap-3 items-center justify-between md:justify-start w-[520] h-[168]">
+        <div className="flex flex-col gap-3 items-center justify-between md:justify-start">
           <h1 className="hidden md:block text-white text-xl font-bold py-2 px-6 mt-6 bg-bgHeader bg-opacity-65 md:bg-transparent md:p-0 ">
             Welcome to my portfolio
           </h1>
@@ -13,15 +13,16 @@ const Welcome = () => {
             Explore my latest projects
           </p>
           {/* Buttons */}
-          <div className="flex flex-row items-center gap-5 md:w-[35vw] mt-7">
+          <div className="flex flex-row items-center gap-3 w-full md:w-[35vw] mt-7">
+            
             <a href="#contact" className="w-full">
               <Button
                 action="Contact me"
-                additionalClasses="border-solid border border-accentColor"
+                additionalClasses="border-solid border border-accentColor w-32 md:w-60"
               />
             </a>
             <Link to="/Projects" className="w-full">
-            <Button action="View Projects" additionalClasses="bg-bgHeader" />
+            <Button action="View Projects" additionalClasses="bg-bgHeader w-32 md:w-60" />
             </Link>
             
           </div>
