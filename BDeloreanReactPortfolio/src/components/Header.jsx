@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const Header = () => {
   return (
     <div className="flex justify-around flex-row items-center bg-bgHeader p-8 sm:p-4">
@@ -10,8 +12,10 @@ const Header = () => {
         />
         <div className="flex flex-col gap-1">
           <h1 className=" text-white md:text-2xl font-bold">Bianca Delorean</h1>
-          <p className="bg-gray-300 text-xs w-[55%] md:w-[40%]">Front-end Developer</p>
-          <p className="text-white text-xs md:text-base">
+          <p className="bg-gray-300 text-xs w-[55%] md:w-[40%]">
+            Front-end Developer
+          </p>
+          <p className="text-white text-xs md:text-s">
             Passionate about creating beautiful and functional web-sites
           </p>
         </div>
@@ -23,9 +27,10 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="bg-bgButton text-white rounded-lg text-xs text-nowrap px-4 md:w-full max-w-[240px] h-[40px] ">
-            View GitHub
-          </button>
+          <Button
+            action="View GitHub"
+            additionalClasses="px-4 bg-bgButton w-[100px]"
+          />
         </a>
       </div>
     </div>

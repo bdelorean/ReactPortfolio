@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import ScrollToSection from "./components/ScrollToSection";
 import "./App.css";
 import Footer from "./components/Footer";
+import DetailPage from "./Pages/DetailPage";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
             {/* <Route path="/about" element={<About />} /> */}
             <Route path="/projects" element={<Projects />} />
             {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route
+              path="/projectsdata/:projectsdataId"
+              element={<DetailPage />}
+            />
           </Route>
         </Routes>
 

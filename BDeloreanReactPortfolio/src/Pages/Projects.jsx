@@ -7,18 +7,22 @@ const Projects = () => {
   const [searchInput, setSearchInput] = useState("");
 
   const handleChange = (e) => {
-    const value = e.target.value;
+    const value = e.target.value; // Waarde van het invoerveld ophalen
     e.preventDefault();
-    setSearchInput(value);
+    setSearchInput(value); // Update de state met de huidige invoer
 
+    // Hier filteren we de lijst van projecten (projectsdata) om een nieuwe array te maken (filteredProjects).
+    // Om de vergelijking niet hoofdlettergevoelig te maken, gebruiken we .toLowerCase() voor zowel de projectnaam als de zoekterm.
+    // .includes() controleert of de zoekterm voorkomt in de projectnaam.
+    // Als dit waar is, wordt het project toegevoegd aan de nieuwe array (filteredProjects).
     const filteredProjects = projectsdata.filter((card) =>
       card.Name.toLowerCase().includes(value.toLowerCase())
     );
-    setProjects(filteredProjects);
+    setProjects(filteredProjects);// Update de projectenlijst met de gefilterde resultaten
   };
 
   return (
-    <section className="h-[100vh]">
+    <section className="h-auto">
       {/* Search balk */}
       <div className="w-96 h-8 bg-[#5C584E] mx-auto flex items-center justify-center mt-4 rounded-lg">
         <input
@@ -43,7 +47,7 @@ const Projects = () => {
         </svg>
       </div>
       {/* Projects list */}
-      <div className="grid grid-cols-3 w-4/5 mx-auto my-10 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto my-10 gap-5 place-items-center ">
         {projects.map((card, key) => (
           <Project
             key={card.id}
@@ -51,6 +55,8 @@ const Projects = () => {
             title={card.Name}
             detail={card.language}
             btn={card.button}
+            id={card.id} // om naar de detail pagina te kunnen navigeren 
+            
           />
         ))}
       </div>

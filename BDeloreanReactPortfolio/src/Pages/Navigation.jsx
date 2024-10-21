@@ -41,17 +41,17 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex flex-row justify-around items-center gap-5 bg-bgLinks  shadow-sm w-[50%] hover:bg-accentColor">
-          <li>
+        <ul className="hidden md:flex flex-row justify-around items-center gap-5 bg-bgLinks  shadow-sm w-[50%]">
+          <li className=" hover:text-white hover:shadow-lg">
             <Link to="/home">Home</Link>
           </li>
-          <li>
+          <li className=" hover:text-white hover:shadow-lg">
             <Link to="/#about">About</Link>
           </li>
-          <li>
+          <li className=" hover:text-white hover:shadow-lg">
             <Link to="/projects">Projects</Link>
           </li>
-          <li>
+          <li className=" hover:text-white hover:shadow-lg">
             <Link to="/#contact">Contact</Link>
           </li>
         </ul>
@@ -59,23 +59,23 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <ul className="flex flex-col mt-5 md:hidden gap-5 bg-bgLinks w-full p-5 shadow-md bg-opacity-60">
-            <li>
-              <Link to="/home" onClick={toggleMenu}>
+            <li >
+              <Link to="/home" onClick={toggleMenu} className=" hover:text-white hover:shadow-lg hover:p-2">
                 Home
               </Link>
             </li>
-            <li>
-              <Link to="/about" onClick={toggleMenu}>
+            <li >
+              <Link to="/#about" onClick={toggleMenu} className=" hover:text-white hover:shadow-lg hover:p-2">
                 About
               </Link>
             </li>
-            <li>
-              <Link to="/projects" onClick={toggleMenu}>
+            <li >
+              <Link to="/projects" onClick={toggleMenu} className=" hover:text-white hover:shadow-lg hover:p-2">
                 Projects
               </Link>
             </li>
-            <li>
-              <Link to="/contact" onClick={toggleMenu}>
+            <li >
+              <Link to="/#contact" onClick={toggleMenu} className=" hover:text-white hover:shadow-lg hover:p-2">
                 Contact
               </Link>
             </li>
