@@ -18,11 +18,11 @@ const Welcome = () => {
             <a href="#contact" className="w-full">
               <Button
                 action="Contact me"
-                additionalClasses="border-solid border border-accentColor w-32 md:w-60"
+                additionalClasses="border-solid border border-accentColor w-40 md:w-60"
               />
             </a>
             <Link to="/Projects" className="w-full">
-            <Button action="View Projects" additionalClasses="bg-bgHeader w-32 md:w-60" />
+            <Button action="View Projects" additionalClasses="bg-bgHeader w-40  md:w-60" />
             </Link>
             
           </div>
