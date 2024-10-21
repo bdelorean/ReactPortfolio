@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <section className="mt-12">
       <div className="flex flex-col-reverse md:flex-row items-center justify-around">
-        <div className="flex flex-col gap-3 items-center justify-between md:justify-start">
+        <div className="flex flex-col gap-3 items-center justify-between md:justify-start w-[70%] md:w-auto">
           <h1 className="hidden md:block text-white text-xl font-bold py-2 px-6 mt-6 bg-bgHeader bg-opacity-65 md:bg-transparent md:p-0 ">
             Welcome to my portfolio
           </h1>
@@ -18,11 +18,11 @@ const Welcome = () => {
             <a href="#contact" className="w-full">
               <Button
                 action="Contact me"
-                additionalClasses="border-solid border border-accentColor w-40 md:w-60"
+                additionalClasses="border-solid border border-accentColor md:w-60"
               />
             </a>
             <Link to="/Projects" className="w-full">
-            <Button action="View Projects" additionalClasses="bg-bgHeader w-40  md:w-60" />
+            <Button action="View Projects" additionalClasses="bg-bgHeader   md:w-60" />
             </Link>
             
           </div>
