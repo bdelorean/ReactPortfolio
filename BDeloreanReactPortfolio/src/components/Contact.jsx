@@ -1,12 +1,14 @@
-import Form from "./Form"
-import Icons from "./Icons"
-
+import Form from "./Form";
+import Icons from "./Icons";
 
 const Contact = () => {
   return (
     <section
       id="contact"
       className="w-[1300px] h-auto md:h-[350px] mx-auto shadow-lg py-2 bg-[#21201D]/80 mb-28 mt-28"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
     >
       <div className="mt-8"></div>
       <div className="flex flex-col items-start ml-6 md:flex-row md:items-center justify-around">
@@ -17,7 +19,10 @@ const Contact = () => {
             Feel free to reach out through any of the following options
           </p>
           <ul className="text-white p-3 list-disc">
-            <li>Email: &#9993;<span className="text-xs"> bia.delorean@gmail.com</span> </li>
+            <li>
+              Email: &#9993;
+              <span className="text-xs"> bia.delorean@gmail.com</span>{" "}
+            </li>
             <li>
               LinkedIn:{" "}
               <a
@@ -44,12 +49,10 @@ const Contact = () => {
         </div>
         {/* Form */}
         <Form />
-        
       </div>
       {/* div for scroll behavior */}
-      <div className="bg-accentColor w-full md:w-4/5 h-px mx-auto mt-4 "></div> 
+      <div className="bg-accentColor w-full md:w-4/5 h-px mx-auto mt-4 "></div>
       <Icons />
-      
     </section>
   );
 };

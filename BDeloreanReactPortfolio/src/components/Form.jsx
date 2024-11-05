@@ -14,7 +14,7 @@ const Form = () => {
             </label>
             <input
               type="text"
-              placeholder="enter your name"
+              placeholder="John Doe"
               className="text-black text-xs w-full p-1 rounded-sm placeholder:text-xs placeholder:italic"
               name="name"
             />
@@ -25,7 +25,7 @@ const Form = () => {
             </label>
             <input
               type="email"
-              placeholder="enter your email"
+              placeholder="john.doe@gmail.com"
               className="text-black text-xs w-full p-1 rounded-sm placeholder:text-xs placeholder:italic"
               name="email"
             />
@@ -39,7 +39,8 @@ const Form = () => {
               id="message"
               cols="30"
               rows="2"
-              className="rounded-sm text-black"
+              className="rounded-sm text-black placeholder:text-xs placeholder:italic p-1"
+              placeholder="Let's stay in touch"
             ></textarea>
           </div>
           <button
