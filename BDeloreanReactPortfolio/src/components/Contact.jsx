@@ -6,9 +6,7 @@ const Contact = () => {
     <section
       id="contact"
       className="w-[1300px] h-auto md:h-[350px] mx-auto shadow-lg py-2 bg-[#21201D]/80 mb-28 mt-28"
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"
+      data-aos="zoom-in-up"
     >
       <div className="mt-8"></div>
       <div className="flex flex-col items-start ml-6 md:flex-row md:items-center justify-around">

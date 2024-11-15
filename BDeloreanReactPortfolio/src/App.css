@@ -3,9 +3,67 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body{
+body {
   font-family: Roboto, sans-serif;
   height: auto;
   margin: 0;
   padding: 0;
+}
+/* animation text */
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+    1s both;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
   }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* hover button */
+/* Stilul pentru buton */
+.button {
+  transition: all 0.3s ease-in-out; /* Tranziție lină */
+}
+
+/* Stiluri de hover pentru buton */
+.button:hover {
+  background-color: #977955; /* Culoare de fundal pe hover */
+  color: white; /* Culoare text pe hover */
+  /* border-color: #b22cff; Culoare bordură pe hover */
+  transform: scale(1.05); /* Crește dimensiunea butonului ușor pe hover */
+}
+
+/* Stilul pentru buton */
+.button2 {
+  transition: all 0.3s ease-in-out; /* Tranziție lină pentru toate schimbările */
+}
+
+/* Stiluri de hover pentru buton */
+.button2:hover {
+  color: white; /* Culoare text pe hover */
+  border: solid 1px #977955;
+  /* border-color: #977955; Bordură de culoare #977955 pe hover */
+  transform: scale(1.05); /* Mărire ușoară a butonului la hover */
+}
+
